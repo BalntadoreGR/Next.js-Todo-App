@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+   }
+.task-item p {
+    color: #888;
+    text-decoration: line-through;
+   }
