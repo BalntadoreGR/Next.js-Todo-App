@@ -1,4 +1,5 @@
 // src/components/TaskItem.tsx
+"use client";
 import { Task } from './../../types/types';
 import { useTaskStore } from './../../store/taskStore';
 import { api } from '~/trpc/react';

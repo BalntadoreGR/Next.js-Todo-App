@@ -22,11 +22,17 @@ export const AddTask = () => {
           await utils.task.invalidate();
         },
       });    
+
+      const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+          // Set loading state when the form is submitted
+        createTask.mutate({ title, description });
+      }
   
     return (
       <div className={styles.addTaskContainer}>
         <h1 style={{ fontSize: '18px', marginBottom: '8px' }}>Add new task :</h1>
-        <form onSubmit={() => createTask.mutate({ title, description })} className={styles.form}>          
+        <form onSubmit={handleSubmit} className={styles.form}>          
           <input
             type="text"
             required

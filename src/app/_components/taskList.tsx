@@ -1,4 +1,4 @@
-import { memo } from 'react';
+"use client";
 import { useTaskStore } from '../../store/taskStore';
 import { TaskItem } from './taskItem';
 import styles from "./taskList.module.css";
@@ -19,4 +19,4 @@ const TaskList = () => {
   );
 };
 
-export default memo(TaskList);
+export default TaskList;

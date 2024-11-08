@@ -11,3 +11,8 @@
     color: #888;
     text-decoration: line-through;
    }
+   body {
+    background-color: #d2c8c8;
+    background-size: cover; 
+    background-position: center; 
+  }
